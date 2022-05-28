@@ -1,7 +1,7 @@
 # Godot AutoGridContainer
 An Auto Sizing GridContainer for Godot
 
-Have you ever needed a grid container to hold lots of the same node? Then this is for you! It automagically changes the `coloums` value to fit all of your nodes optimally (a vertical scrollbar appears if not everything can fit)
+Have you ever needed a grid container to hold lots of the same node? Then this is for you! It automagically changes the `columns` value to fit all of your nodes optimally (a vertical scrollbar appears if not everything can fit)
 
 
 ## This repo contains 2 versions:
