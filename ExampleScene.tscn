@@ -1,0 +1,100 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AutoGridContainer - Simple Version/AutoGridContainer.gd" type="Script" id=1]
+[ext_resource path="res://AutoGridContainer - Full Version/AutoGridContainer.tscn" type="PackedScene" id=2]
+
+[node name="ExampleScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="AutoGridContainer2" parent="." instance=ExtResource( 2 )]
+anchor_right = 1.0
+anchor_bottom = 0.438333
+margin_right = 0.0
+margin_bottom = 0.0
+
+[node name="ColorRect" type="ColorRect" parent="AutoGridContainer2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="ColorRect" parent="AutoGridContainer2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="ColorRect" parent="AutoGridContainer2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="ColorRect" parent="AutoGridContainer2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect5" type="ColorRect" parent="AutoGridContainer2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect6" type="ColorRect" parent="AutoGridContainer2"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="AutoGridContainer" type="GridContainer" parent="."]
+anchor_top = 0.486667
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="AutoGridContainer"]
+margin_right = 1024.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect2" type="ColorRect" parent="AutoGridContainer"]
+margin_top = 104.0
+margin_right = 1024.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect3" type="ColorRect" parent="AutoGridContainer"]
+margin_top = 208.0
+margin_right = 1024.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect4" type="ColorRect" parent="AutoGridContainer"]
+margin_top = 312.0
+margin_right = 1024.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect5" type="ColorRect" parent="AutoGridContainer"]
+margin_top = 416.0
+margin_right = 1024.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+
+[node name="ColorRect6" type="ColorRect" parent="AutoGridContainer"]
+margin_top = 520.0
+margin_right = 1024.0
+margin_bottom = 620.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
