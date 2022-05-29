@@ -94,3 +94,12 @@ func _move_children_to_grid():
 		var child = get_child(2)
 		remove_child(child)
 		grid_container.add_child(child)
+
+#override the get_node function to allow for redirects to the grid
+func get_node(node_path : NodePath) -> Node:
+	#use the default functionallity if node exists normally
+	if get_child(0).get_node("../" + node_path):
+		return get_child(0).get_node("../" + node_path)
+	#return the item in the grid container
+	else:
+		return grid_container.get_node(node_path)
