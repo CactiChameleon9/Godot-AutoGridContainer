@@ -47,7 +47,7 @@ func _process(_delta: float) -> void:
 	var screen_height = min(rect_size.y, OS.window_size.y)
 	
 	#(columns - 1) means that it can still shrink in size
-	grid_container.columns = int(screen_width/_node_width) - 1
+	grid_container.columns = max(1, int(screen_width/_node_width) - 1)
 	#don't allow more columns than children (wasted space)
 	grid_container.columns = min(grid_container.columns, grid_container.get_child_count())
 	
