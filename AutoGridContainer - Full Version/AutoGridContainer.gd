@@ -90,7 +90,7 @@ func _get_rows(columns):
 func _move_children_to_grid():
 	#puts the children into the grid container
 	#ignores the first 2 children (container and size tester)
-	for i in range(2, get_child_count()):
+	for _i in range(2, get_child_count()):
 		var child = get_child(2)
 		remove_child(child)
 		grid_container.add_child(child)
